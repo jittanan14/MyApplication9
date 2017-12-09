@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TestList</string>
+    <string name="Cat">แมว</string>
+    <string name="Dog">สุนัข</string>
+    <string name="Rabbit">กระต่าย</string>
+</resources>
