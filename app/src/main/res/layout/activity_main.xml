@@ -10,9 +10,17 @@
 
     <ListView
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="200dp"
         android:id="@+id/ListName"
         />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        >
+
+
 <Button
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
@@ -20,4 +28,14 @@
     android:id="@+id/Addbutton2"
 
     />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete"
+        android:id="@+id/Deletebutton"
+        android:layout_marginLeft="10dp"
+
+
+        />
+    </LinearLayout>
 </LinearLayout>

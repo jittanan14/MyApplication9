@@ -48,11 +48,11 @@ public class DBHelper extends SQLiteOpenHelper {
 
    }
 
-   public void addAnimal(Animals animal){
+    public void addAnimal(Animals animal){
 
-       sql = this.getWritableDatabase();
-       ContentValues values= new ContentValues();
-       values.put(COL_ENGNAME,animal.getEngName() );
+        sql = this.getWritableDatabase();
+        ContentValues values= new ContentValues();
+        values.put(COL_ENGNAME,animal.getEngName() );
        values.put(COL_ENGNAME,animal.getThaiName());
        values.put(COL_ENGNAME,animal.getPicture() );
        values.put(COL_ENGNAME,animal.getDetails() );
@@ -77,6 +77,16 @@ public class DBHelper extends SQLiteOpenHelper {
        sql.close();
        return am;
    }
+    public void deleteFriend(String id) {
+
+        sql = this.getWritableDatabase();
+
+    /*sqLiteDatabase.delete(Friend.TABLE, Friend.Column.ID + " = ? ",
+            new String[] { String.valueOf(friend.getId()) });*/
+       sql.delete(TABLE_NAME, ID + " = " + id, null);
+
+        sql.close();
+    }
 }
 
 //create table TABLE_NAME (COL_NAME TYPE +...)
